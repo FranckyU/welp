@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an app that mirrors and augment Yelp fusion API to allow you search, pick, rank and annotate nearby restaurants ... for the busy you and the future you.
 
-Things you may want to cover:
+## Stack
 
-* Ruby version
+- Ruby 2.7.4
+- Rails 6
+- React (using https://github.com/reactjs/react-rails)
+- MaterialUI
+- MongoDB
 
-* System dependencies
+## Status
 
-* Configuration
+The work is in progress regarding:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- React UI/navigation
+- Favorites restaurants pick and annotations backend
