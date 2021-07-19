@@ -34,6 +34,6 @@ module WelpApp
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    config.react.server_renderer_extensions = ["jsx", "js", "tsx", "ts"]
+    config.react.server_renderer_extensions = %w[jsx js tsx ts]
   end
 end

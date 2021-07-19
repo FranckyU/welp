@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 module Yelp
   class Client
     ENDPOINTS = {
-      search: "/businesses/search",
-      business_details: "/businesses/:id",
-      autocomplete: "/autocomplete"
+      search: '/businesses/search',
+      business_details: '/businesses/:id',
+      autocomplete: '/autocomplete'
     }.freeze
 
     def fetch(endpoint, data = {})
@@ -15,7 +17,7 @@ module Yelp
 
     def url_from(endpoint, data)
       url = ENDPOINTS[endpoint]
-      data.each { |k, v| url.gsub!(/\:#{k}/, v) }
+      data.each { |k, v| url.gsub!(/:#{k}/, v) }
     end
   end
 end
